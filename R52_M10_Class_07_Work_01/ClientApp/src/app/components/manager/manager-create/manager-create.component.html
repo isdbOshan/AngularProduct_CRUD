@@ -1,0 +1,55 @@
+<mat-card class="form-container">
+    <mat-card-header>
+        <mat-card-title>Create Product</mat-card-title>
+        <mat-card-subtitle>Fill up the Form</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <form [formGroup]="managerForm" (ngSubmit)="save()">
+            <mat-form-field class="f-w mb-1">
+                <mat-label>Product Name</mat-label>
+                <input type="text" matInput formControlName="managerName" placeholder="product name">
+                <mat-error *ngIf="f['managerName'].hasError('required')">
+                    Product Name is <strong>required</strong>
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="f-w mb-1">
+                <mat-label>Select an option</mat-label>
+                <mat-select formControlName="sectionId" (selectionChange)="sectionCahnged($event)">
+                    <mat-option *ngFor="let sec of sections" [value]="sec.sectionId">
+                        {{sec.sectionName}}
+                      </mat-option>
+                </mat-select>
+                <mat-error *ngIf="f['sectionId'].hasError('required')">
+                    Section is <strong>required</strong>
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field class="f-w mb-1">
+                <mat-label>Select an option</mat-label>
+                <mat-select formControlName="productId" >
+                    <mat-option *ngFor="let p of products" [value]="p.productId">
+                        {{p.productName}}
+                      </mat-option>
+                </mat-select>
+                <mat-error *ngIf="f['productId'].hasError('required')">
+                    Section is <strong>required</strong>
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field class="f-w mb-1">
+                <mat-label>Picture</mat-label>
+                <input type="text"  matInput formControlName="picture" readonly="true" >
+                <mat-icon matSuffix (click)="file.click()">attach_file</mat-icon>
+                <mat-error *ngIf="f['picture'].hasError('required')">
+                    Picture is <strong>required</strong>
+                </mat-error>
+            </mat-form-field>
+            <div class="f-w mb-1">
+                <button mat-raised-button color="primary" type="submit" [disabled]="managerForm.invalid">Save</button>
+            </div>
+            <input type="file" #file style="display: none;" (change)="fileChanged($event)"/>
+        </form>
+    </mat-card-content>
+    <mat-card-actions>
+        <a mat-button [routerLink]="['/products']">Back to list</a>
+    </mat-card-actions>
+</mat-card>

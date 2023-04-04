@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.main-container
+{
+    display: block;
+    margin: 15px 30px;
+}
+.form-container
+{
+    width: 65%;
+    margin: 15px auto;
+}
+.f-w {
+    width: 100%;
+}
+.mb-1
+{
+    padding-bottom: 1rem;
+}
+.spacer
+{
+    flex: 1 1 auto;
+}
+
+@media screen  and (max-width: 600px) {
+    .form-container
+    {
+        width: 97.5%;
+        margin: 15px auto;
+    }
+}

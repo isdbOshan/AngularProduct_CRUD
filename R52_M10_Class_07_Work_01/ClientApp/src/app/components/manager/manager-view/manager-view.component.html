@@ -1,0 +1,47 @@
+<mat-card class="medium-card">
+    <mat-card-header>
+        <mat-card-title>Managers</mat-card-title>
+        <mat-card-subtitle>List of Managers</mat-card-subtitle>
+        <span class="spacer"></span>
+        <div>
+            <a mat-mini-fab [routerLink]="['/manager-create']">
+                <mat-icon>add</mat-icon>
+            </a>
+        </div>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-table [dataSource]="dataSource" matSort>
+            <ng-container matColumnDef="picture">
+                <mat-header-cell *matHeaderCellDef mat-sort-header>picture</mat-header-cell>
+                <mat-cell *matCellDef="let element"><img [src]="getSafeUrl(element.picture)" style="width:50px; border-radius:50%" /></mat-cell>
+              </ng-container>
+            <ng-container matColumnDef="managerName">
+              <mat-header-cell *matHeaderCellDef mat-sort-header>Manager Name </mat-header-cell>
+              <mat-cell *matCellDef="let element">{{element.managerName}}</mat-cell>
+            </ng-container>
+
+
+            
+
+              <ng-container matColumnDef="productId">
+                <mat-header-cell *matHeaderCellDef mat-sort-header>Product</mat-header-cell>
+                <mat-cell *matCellDef="let element">{{element.product.productName}}</mat-cell>
+            </ng-container> 
+
+
+
+            
+
+            <ng-container matColumnDef="actions">
+              <mat-header-cell *matHeaderCellDef>...</mat-header-cell>
+              <mat-cell *matCellDef="let element">
+                <button mat-icon-button [routerLink]="['/manager-edit', element.managerId]"><mat-icon>edit</mat-icon></button>
+                <button mat-icon-button  color="warn" (click)="confirmDelete(element)" ><mat-icon>delete</mat-icon></button>
+              </mat-cell>
+            </ng-container>
+            <mat-header-row *matHeaderRowDef="columnList"></mat-header-row>
+            <mat-row *matRowDef="let row;columns:columnList"></mat-row>
+          </mat-table>
+            <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" [pageSize]="5" showFirstLastButtons></mat-paginator>
+    </mat-card-content>
+</mat-card>

@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "9jkUBLsXmruLbu5plEmSuPASjZ3+XK0P4vziSOuzL2Y=",
+  "Source": "R52_M10_Class_07_Work_02",
+  "BasePath": "_content/R52_M10_Class_07_Work_02",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "R52_M10_Class_07_Work_02\\wwwroot",
+      "Source": "R52_M10_Class_07_Work_02",
+      "ContentRoot": "D:\\R52\\M10\\Class 07\\R52_M10_Class_07_Works\\R52_M10_Class_07_Work_02\\wwwroot\\",
+      "BasePath": "_content/R52_M10_Class_07_Work_02",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\R52\\M10\\Class 07\\R52_M10_Class_07_Works\\R52_M10_Class_07_Work_02\\wwwroot\\Images\\hcaaq24t.jpg",
+      "SourceId": "R52_M10_Class_07_Work_02",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\R52\\M10\\Class 07\\R52_M10_Class_07_Works\\R52_M10_Class_07_Work_02\\wwwroot\\",
+      "BasePath": "_content/R52_M10_Class_07_Work_02",
+      "RelativePath": "Images/hcaaq24t.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\hcaaq24t.jpg"
+    },
+    {
+      "Identity": "D:\\R52\\M10\\Class 07\\R52_M10_Class_07_Works\\R52_M10_Class_07_Work_02\\wwwroot\\Images\\vav1uzxf.jpg",
+      "SourceId": "R52_M10_Class_07_Work_02",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\R52\\M10\\Class 07\\R52_M10_Class_07_Works\\R52_M10_Class_07_Work_02\\wwwroot\\",
+      "BasePath": "_content/R52_M10_Class_07_Work_02",
+      "RelativePath": "Images/vav1uzxf.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\vav1uzxf.jpg"
+    },
+    {
+      "Identity": "D:\\R52\\M10\\Class 07\\R52_M10_Class_07_Works\\R52_M10_Class_07_Work_02\\wwwroot\\Images\\yxhn00vj.jpg",
+      "SourceId": "R52_M10_Class_07_Work_02",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\R52\\M10\\Class 07\\R52_M10_Class_07_Works\\R52_M10_Class_07_Work_02\\wwwroot\\",
+      "BasePath": "_content/R52_M10_Class_07_Work_02",
+      "RelativePath": "Images/yxhn00vj.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\yxhn00vj.jpg"
+    }
+  ]
+}
